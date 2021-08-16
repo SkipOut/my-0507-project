@@ -1,0 +1,8 @@
+node {
+    stage("clone"){
+        git branch: 'develop', url: 'https://github.com/SkipOut/my-0507-project.git'
+    }
+    stage("show time"){
+        bat "time"
+    }
+}
